@@ -59,24 +59,27 @@ ul {
 
 /* Header */
 
-.main-menu {
-    display: flex;
-    align-items: center;
-    height: 3rem;
-    font-size: 1.2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1400;
-    background-color: rgba(0, 0, 0, 0.75);
-
-    ul {
+header{
+    ul.main-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        font-size: 1.2rem;
+        position: fixed;
+        top: 0;
+        z-index: 1400;
+        background-color: rgba(0, 0, 0, 0.75);
         display: flex;
         justify-content: space-around;
         flex: 1;
-        margin: 0 14%;
+        padding: 0 14%;
+        
         li {
+            .logo {
+                font-size: 1.2rem;
+            }
+
             a {
                 padding-bottom: 2px;
                 font-size: 1rem;
@@ -91,11 +94,13 @@ ul {
     }
 }
 
+
+/* Show case */
 .showcase1 {
     text-align: center;
     height: 54rem;
     background: url('./img/iphone_12.jpg') no-repeat center center/cover;
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
     
     nav {
         text-align: center;
@@ -152,7 +157,7 @@ ul {
     text-align: center;
     height: 54rem;
     background: url('./img/ipad.jpg') no-repeat center center/cover;
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
     padding-top: 1rem;
 
     h1 {
@@ -190,7 +195,7 @@ ul {
     text-align: center;
     height: 54rem;
     background: url('./img/imac.jpg') no-repeat center center/cover;
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
     padding-top: 1rem;
 
     h1 {
@@ -224,11 +229,12 @@ ul {
     }
 }
 
+/* Home cards */
 .home-cards {
-    margin: 0 1%;
+    margin: 0 1% 2% 1%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(48.5%, 1fr));
-    gap: 1%;
+    gap: 0.5%;
 
     a {
         padding-bottom: 2px;
@@ -245,9 +251,8 @@ ul {
         text-align: center;
         color: #fff;
 
-        h2 {
-            margin-top: 45%;
-            @include h2();
+        img {
+            margin-top: 40%;
         }
 
         p {
@@ -255,8 +260,14 @@ ul {
         }
 
         a {
-            margin-top: 1.5rem;
-            color: #fff;
+            padding-bottom: 2px;
+            font-size: 1rem;
+            font-weight: 200;
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            @include ahoverrgb(255, 255, 255);
         }
     }
 
@@ -293,6 +304,277 @@ ul {
                 a:hover {
                     @include ahoverrgba(27, 84, 204, 0.795);
                 }
+            }
+        }
+    }
+
+    .picture3 {
+        height: 50rem;
+        background: url('./img/home_card-watch.jpg') no-repeat center center/cover;
+        text-align: center;
+        color: #fff;
+
+        img {
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+    
+            li {
+                margin: 0 1rem;
+                font-size: 1.2rem;
+    
+                a {
+                    padding-bottom: 2px;
+                    color: rgba(27, 84, 204, 0.795);
+                }
+    
+                a:hover {
+                    @include ahoverrgba(27, 84, 204, 0.795);
+                }
+            }
+        }
+    }
+
+    .picture4 {
+        height: 50rem;
+        background: url('./img/home_card-trying_s2.jpg') no-repeat center center/cover;
+        text-align: center;
+        color: #fff;
+        
+        p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            margin-top: 70%;
+        }
+
+        a {
+            padding-bottom: 2px;
+            font-size: 1rem;
+            font-weight: 200;
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            @include ahoverrgb(255, 255, 255);
+        }
+    }
+
+    .picture5 {
+        height: 36rem;
+        background: url('./img/home_card-arcade.jpg') no-repeat center center/cover;
+        text-align: center;
+        color: #000;
+
+        img {
+            margin-top: 6%;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+    
+            li {
+                margin: 0 1rem;
+                font-size: 1.2rem;
+    
+                a {
+                    padding-bottom: 2px;
+                    color: rgba(27, 84, 204, 0.795);
+                }
+    
+                a:hover {
+                    @include ahoverrgba(27, 84, 204, 0.795);
+                }
+            }
+        }
+    }
+
+    .picture6 {
+        height: 36rem;
+        background: url('./img/home_card-airtag.jpg') no-repeat center center/cover;
+        text-align: center;
+        color: #000;
+
+        img {
+            margin-top: 6%;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+    
+            li {
+                margin: 0 1rem;
+                font-size: 1.2rem;
+    
+                a {
+                    padding-bottom: 2px;
+                    color: rgba(27, 84, 204, 0.795);
+                }
+    
+                a:hover {
+                    @include ahoverrgba(27, 84, 204, 0.795);
+                }
+            }
+        }
+    }
+}
+
+/* Footer */
+footer.links {
+    background-color: #f2f2f2;
+    color: #616161;
+    padding: 1% 18%;
+    height: auto;
+    font-size: 0.2rem;
+  
+    ul {
+        li {
+            p {
+                margin-bottom: 1%;
+            }
+        }
+    }
+
+    .links-inner {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1rem;
+        align-items: flex-start;
+        justify-content: center;
+        
+        ul {
+            li {
+                line-height: 2;
+    
+                a {
+                    padding-bottom: 2px;
+                    color: #000;
+                }
+    
+                a:hover {
+                    @include ahoverrgb(0, 0, 0);
+                }
+            }
+        }
+    }
+
+    .more1 {
+        display: flex;
+        margin-bottom: 1%;
+
+        a {
+            padding-bottom: 2px;
+            color: rgba(27, 84, 204, 0.795);
+        }
+
+        a:hover {
+            @include ahoverrgba(27, 84, 204, 0.795);
+        }
+    }
+
+    .more2 {
+        display: flex;
+        margin-top: 1%;
+        justify-content: space-between;
+
+        a {
+            padding-bottom: 2px;
+            color: #000;
+        }
+
+        a:hover {
+            @include ahoverrgb(0, 0, 0);
+        }
+
+        li {
+            display: flex;
+            margin-bottom: 1rem;
+
+            ul {
+                margin-left: 1rem;
+                display: flex;
+
+                li {
+                    margin: 0 0.2rem;
+
+                    a {
+                        padding: 0 2px 2px 2px;
+                        
+                        &.a {
+                            padding-left: 10px;
+                            border-left: 1px solid rgba(0, 0, 0, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+@media(max-width: 700px) {
+    .menu-btn{
+        display: block;
+    }
+  
+    .menu-btn:hover{
+      opacity: 0.5;
+    }
+  
+    .main-header{
+        ul.main-menu {
+            margin: 0 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100vh;
+            background: #f2f2f2;
+            opacity: 0.9;
+            padding: 2rem;
+            transform: translateX(-50rem);
+            transition: transform 0.5s ease-in-out;
+
+            &.show{
+                transform: translateX(-2rem);
+            }
+
+            li{
+                padding: 0.8rem;
+                border-bottom: #ccc solid 1px;
+                font-size: 1.2rem;
+                
+                a {
+                    color: #000;
+                }
+            }
+            li:last-child{
+                border-bottom: 0;
             }
         }
     }
