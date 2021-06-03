@@ -80,14 +80,7 @@ header ul.main-menu li a:hover {
 }
 
 /* Show case */
-.showcase1 {
-  text-align: center;
-  height: 54rem;
-  background: url("./img/iphone_12.jpg") no-repeat center center/cover;
-  margin-bottom: 1%;
-}
-
-.showcase1 nav {
+nav {
   text-align: center;
   padding-top: 3.4rem;
   height: 6rem;
@@ -95,14 +88,21 @@ header ul.main-menu li a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.showcase1 nav a {
+nav a {
   padding-bottom: 2px;
   font-size: 0.6rem;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.showcase1 nav a:hover {
+nav a:hover {
   border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.showcase1 {
+  text-align: center;
+  height: 54rem;
+  background: url("./img/iphone_12.jpg") no-repeat center center/cover;
+  margin-bottom: 1%;
 }
 
 .showcase1 h1 {
@@ -601,6 +601,10 @@ footer.links .more2 li ul li a.a {
   }
   .main-header ul.main-menu li:last-child {
     border-bottom: 0;
+  }
+  nav {
+    padding-top: 1.5rem;
+    height: 5rem;
   }
   .home-cards {
     -ms-grid-columns: 1fr;
