@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 110rem;
+  margin: auto;
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  z-index: 2;
+  display: none;
+}
+
+/* Header */
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1400;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 14%;
+}
+
+.main-menu ul li a {
+  padding-bottom: 2px;
+  font-size: 1rem;
+  font-weight: 200;
+  color: white;
+}
+
+.main-menu ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.showcase1 {
+  text-align: center;
+  height: 54rem;
+  background: url("./img/iphone_12.jpg") no-repeat center center/cover;
+  margin-bottom: 1rem;
+}
+
+.showcase1 nav {
+  text-align: center;
+  padding-top: 3.4rem;
+  height: 6rem;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.showcase1 nav a {
+  padding-bottom: 2px;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.showcase1 nav a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.showcase1 h1 {
+  margin-top: 2.5rem;
+  font-size: 3.5rem;
+}
+
+.showcase1 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.showcase1 P {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.showcase1 .check {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showcase1 .check li {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.showcase1 .check li a {
+  color: rgba(27, 84, 204, 0.795);
+}
+
+.showcase1 .check li a:hover {
+  border-bottom: 2px solid rgba(27, 84, 204, 0.795);
+}
+
+.showcase2 {
+  text-align: center;
+  height: 54rem;
+  background: url("./img/ipad.jpg") no-repeat center center/cover;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.showcase2 h1 {
+  margin-top: 2.5rem;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.showcase2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.showcase2 ul {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showcase2 ul li {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.showcase2 ul li a {
+  padding-bottom: 2px;
+  color: rgba(27, 84, 204, 0.795);
+}
+
+.showcase2 ul li a:hover {
+  border-bottom: 2px solid rgba(27, 84, 204, 0.795);
+}
+
+.showcase3 {
+  text-align: center;
+  height: 54rem;
+  background: url("./img/imac.jpg") no-repeat center center/cover;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.showcase3 h1 {
+  margin-top: 2.5rem;
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.showcase3 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.showcase3 ul {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showcase3 ul li {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.showcase3 ul li a {
+  padding-bottom: 2px;
+  color: rgba(27, 84, 204, 0.795);
+}
+
+.showcase3 ul li a:hover {
+  border-bottom: 2px solid rgba(27, 84, 204, 0.795);
+}
+
+.home-cards {
+  margin: 0 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(48.5%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(48.5%, 1fr));
+  gap: 1%;
+}
+
+.home-cards a {
+  padding-bottom: 2px;
+  font-size: 1rem;
+}
+
+.home-cards .list {
+  margin-bottom: 1rem;
+}
+
+.home-cards .picture1 {
+  height: 54rem;
+  background: url("./img/home_card-wwdc21.jpg") no-repeat center center/cover;
+  text-align: center;
+  color: #fff;
+}
+
+.home-cards .picture1 h2 {
+  margin-top: 45%;
+  font-size: 2.5rem;
+}
+
+.home-cards .picture1 p {
+  font-size: 1.2rem;
+}
+
+.home-cards .picture1 a {
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+.home-cards .picture2 {
+  height: 54rem;
+  background: url("./img/home_card-iphone_12.jpg") no-repeat center center/cover;
+  text-align: center;
+  color: #fff;
+}
+
+.home-cards .picture2 h2 {
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.home-cards .picture2 p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.home-cards .picture2 ul {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-cards .picture2 ul li {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.home-cards .picture2 ul li a {
+  padding-bottom: 2px;
+  color: rgba(27, 84, 204, 0.795);
+}
+
+.home-cards .picture2 ul li a:hover {
+  border-bottom: 2px solid rgba(27, 84, 204, 0.795);
+}
+/*# sourceMappingURL=style.css.map */
