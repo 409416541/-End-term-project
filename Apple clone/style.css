@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  font-size: 0.1rem;
+}
+
 ul {
   list-style: none;
 }
@@ -466,7 +470,6 @@ footer.links {
   color: #616161;
   padding: 1% 18%;
   height: auto;
-  font-size: 0.2rem;
 }
 
 footer.links ul li p {
@@ -577,7 +580,7 @@ footer.links .more2 li ul li a.a {
     left: 0;
     width: 50%;
     height: 100vh;
-    background: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0.9;
     padding: 2rem;
     -webkit-transform: translateX(-50rem);
@@ -596,11 +599,15 @@ footer.links .more2 li ul li a.a {
     border-bottom: #ccc solid 1px;
     font-size: 1.2rem;
   }
-  .main-header ul.main-menu li a {
-    color: #000;
-  }
   .main-header ul.main-menu li:last-child {
     border-bottom: 0;
+  }
+  .home-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer {
+    margin-top: 22%;
   }
 }
 /*# sourceMappingURL=style.css.map */
