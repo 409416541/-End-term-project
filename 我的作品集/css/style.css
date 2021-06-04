@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap");
 * {
@@ -123,7 +122,17 @@ header nav.main-menu .list1 li .list2 {
 }
 
 header nav.main-menu .list1 li .list2 .list3 {
-  /*第三層以後的選單出現位置與第二層不同*/
+  border: #ccc 1px solid;
+  position: absolute;
+  z-index: 900;
+  top: 100%;
+  left: 10%;
+  width: 100%;
+  background-color: rgba(161, 95, 134, 0.75);
+  display: none;
+}
+
+header nav.main-menu .list1 li .list2 .list4 {
   border: #ccc 1px solid;
   position: absolute;
   z-index: 900;

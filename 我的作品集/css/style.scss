@@ -107,8 +107,18 @@ header {
           background-color: rgba(161, 95, 134, 0.75);
           display: none;
           
-        
           .list3 {
+            border: #ccc 1px solid;
+            position: absolute;
+            z-index: 900;
+            top: 100%;
+            left: 10%;
+            width: 100%;
+            background-color: rgba(161, 95, 134, 0.75);
+            display: none;
+          }
+
+          .list4 {
             border: #ccc 1px solid;
             position: absolute;
             z-index: 900;
