@@ -79,11 +79,110 @@ header ul.main-menu li a:hover {
   border-bottom: 2px solid white;
 }
 
+header nav.main-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  z-index: 1400;
+  background-color: rgba(161, 95, 134, 0.75);
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 14%;
+}
+
+header nav.main-menu .list1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav.main-menu .list1 li {
+  padding: 1.8rem 1rem;
+}
+
+header nav.main-menu .list1 li .list2 {
+  border: #ccc 1px solid;
+  position: absolute;
+  z-index: 99;
+  left: 42%;
+  top: 100%;
+  max-width: 20%;
+  background-color: rgba(161, 95, 134, 0.75);
+  display: none;
+}
+
+header nav.main-menu .list1 li .list2 .list3 {
+  border: #ccc 1px solid;
+  position: absolute;
+  z-index: 900;
+  top: 100%;
+  left: 10%;
+  width: 100%;
+  background-color: rgba(161, 95, 134, 0.75);
+  display: none;
+  left: 10%;
+}
+
+header nav.main-menu .list1 li .list2 .list {
+  left: 70%;
+}
+
+header nav.main-menu .list1 li .list2 li:hover > .list3, header nav.main-menu .list1 li .list2 .list4 {
+  display: block;
+}
+
+header nav.main-menu .list1 li .list2 li {
+  border-bottom: #ccc 1px solid;
+  padding: 0.5rem;
+}
+
+header nav.main-menu .list1 li .list2 li:last-child {
+  border-bottom: none;
+}
+
+header nav.main-menu .list1 li a {
+  font-size: 1.2rem;
+  padding: 2px;
+}
+
+header nav.main-menu .list1 li a:hover {
+  border-radius: 5px;
+  border-bottom: 4px solid #262626;
+  background-color: rgba(218, 64, 172, 0.904);
+  border: 0.2px solid rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+header nav.main-menu .list1 li:hover > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* Show case */
 nav {
   text-align: center;
-  padding-top: 3.4rem;
-  height: 6rem;
+  padding-top: 6.4rem;
+  height: 9rem;
   font-size: 1.2rem;
   background-color: rgba(0, 0, 0, 0.05);
 }
