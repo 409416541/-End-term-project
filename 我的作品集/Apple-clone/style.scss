@@ -55,7 +55,7 @@ ul {
 .menu-btn{
     cursor: pointer;
     position: absolute;
-    top: 2rem;
+    top: 2.5rem;
     right: 3rem;
     z-index: 2;
     display: none;
@@ -621,7 +621,7 @@ footer.links {
             }
         }
     }
-  }
+}
 
 @media(max-width: 700px) {
     .menu-btn{
@@ -638,7 +638,7 @@ footer.links {
             margin: 0 0;
             display: block;
             position: absolute;
-            top: 0;
+            top: 2rem;
             left: 0;
             width: 50%;
             height: 100vh;
@@ -661,11 +661,16 @@ footer.links {
                 border-bottom: 0;
             }
         }
+
+        nav.main-menu {
+            height: 2rem;
+            top: 0;
+        }
     }
 
     nav {
-        padding-top: 1.5rem;
-        height: 5rem;
+        padding-top: 2rem;
+        height: 4rem;
     }
 
     .home-cards {
