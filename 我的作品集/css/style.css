@@ -143,7 +143,7 @@ header nav.main-menu .list1 li .list2 .list4 {
   display: none;
 }
 
-header nav.main-menu .list1 li .list2 li:hover > .list3 {
+header nav.main-menu .list1 li .list2 li:hover > .list3, header nav.main-menu .list1 li .list2 .list4 {
   display: block;
 }
 
