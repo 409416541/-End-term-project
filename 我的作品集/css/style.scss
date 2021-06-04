@@ -106,7 +106,7 @@ header {
           max-width: 20%;
           background-color: rgba(161, 95, 134, 0.75);
           display: none;
-          
+
           .list3 {
             border: #ccc 1px solid;
             position: absolute;
@@ -116,17 +116,7 @@ header {
             width: 100%;
             background-color: rgba(161, 95, 134, 0.75);
             display: none;
-          }
-
-          .list4 {
-            border: #ccc 1px solid;
-            position: absolute;
-            z-index: 900;
-            top: 100%;
-            left: 70%;
-            width: 100%;
-            background-color: rgba(161, 95, 134, 0.75);
-            display: none;
+            left: 10%;
           }
 
           li:hover > .list3,.list4 {
