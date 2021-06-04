@@ -173,7 +173,7 @@ header {
 .menu-btn{
   cursor: pointer;
   position: absolute;
-  top: 2rem;
+  top: 5rem;
   right: 3rem;
   z-index: 2;
   display: none;
@@ -358,7 +358,7 @@ footer {
       ul.main-menu{
           display: block;
           position: absolute;
-          top: 0;
+          top: 3rem;
           left: 0;
           width: 50%;
           height: 100vh;
