@@ -133,6 +133,10 @@ header nav.main-menu .list1 li .list2 .list3 {
   left: 10%;
 }
 
+header nav.main-menu .list1 li .list2 .list {
+  left: 70%;
+}
+
 header nav.main-menu .list1 li .list2 li:hover > .list3, header nav.main-menu .list1 li .list2 .list4 {
   display: block;
 }
