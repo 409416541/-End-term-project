@@ -48,7 +48,7 @@ a {
 //Header
 header {
   display: grid;
-  padding: 2rem 0;
+  padding: 4rem 0;
   margin: 2rem auto;
 
   @include setDisplayWidth(90%, 0); 

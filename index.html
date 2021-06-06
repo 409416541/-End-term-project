@@ -5,19 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My home page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <ul>
-            <li>
-                <a href="./class demo/index.html">class demo</a>
-            </li>
-            <li>
-                <a href="./我的作品集/index.html">我的作品集</a>
-            </li>
-            
-        </ul>
+        <div class="logo">
+            <div>
+                <h2>
+                    歡迎來到我的網站
+                </h2>
+            </div>
+        </div>
+        <nav class="main-menu show">
+            <ul class="list1">
+                <li>
+                    <a href="../index.html">首頁</a>    
+                </li>
+                <li>
+                    <a href="#">作品列表</a>
+                    <ul class="list2">
+                        <li>
+                            <a href="../class demo/index.html">class demo</a>
+                            <ul class="list3">
+                                <li>
+                                    <a href="../class demo/w09/iframeDemo.html">第九週成品</a>
+                                </li>
+                                <li>
+                                    <a href="../class demo/w13/index.html">第十三週成品</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html">我的作品集</a>
+                            <ul class="list3 list">
+                                <li>
+                                    <a href="./w14/index.html">第十四週成品</a>
+                                </li>
+                                <li>
+                                    <a href="./w15-mobile-first/index.html">第十五週成品</a>
+                                </li>
+                                <li>
+                                    <a href="./Apple-clone/index.html">Apple clone</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../index.html">關於我</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <div class="search">
+            <form>
+                <input type="text" placeholder="搜尋.." name="search">
+                <button type="submit">搜尋</button>
+            </form>
+        </div>
     </header>
     
 </body>
