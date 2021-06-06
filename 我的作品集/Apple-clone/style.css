@@ -52,7 +52,7 @@ header ul.main-menu {
   height: 3rem;
   font-size: 1.2rem;
   position: fixed;
-  top: 0;
+  top: 3rem;
   z-index: 1400;
   background-color: rgba(0, 0, 0, 0.75);
   display: flex;
@@ -89,7 +89,7 @@ header nav.main-menu {
           align-items: center;
   height: 3rem;
   position: fixed;
-  top: 3rem;
+  top: 0;
   left: 0;
   z-index: 1400;
   background-color: rgba(161, 95, 134, 0.75);
