@@ -23,7 +23,6 @@ li {
 
 h1 {
   padding: 0.5rem;
-  width: 22%;
   border: 2px solid #262626;
   border-radius: 5px;
   font-size: 2rem;
@@ -75,7 +74,7 @@ header {
       h2 {
         font-size: 4rem;
           border-radius: 10px;
-          color: blue;
+          color: #262626;
           background-color: aquamarine;
       }
     }
@@ -182,7 +181,7 @@ header {
     margin: auto;
     margin-bottom: 4rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.15);
 
 }
 
@@ -193,7 +192,17 @@ section.articles {
   
   
     article{
+      margin-bottom: 3rem;
       @include customShadow(0.5rem);
+
+        h1 {
+          width: 18%;
+        }
+
+        .class-demo {
+          width: 22%;
+        }
+
         img{
             width: 100%;
             border: 3px solid #262626;
@@ -204,6 +213,11 @@ section.articles {
             border:2px solid #262626;
             border-radius: 5px;
             padding-bottom: 8px;
+
+            .article-intro {
+              font-weight: 600;
+              font-size: 2.2rem;
+            }
 
             p {
                 padding: 0.5rem;
@@ -229,7 +243,6 @@ section.articles {
 }
 
 .intro {
-  margin-top: 2rem;
   max-width: 150rem;
   width: 90%;
   margin: auto;
@@ -253,6 +266,8 @@ section.articles {
 }
 
 .suggest {
+  margin-bottom: 2rem;
+
   h1 {
     width: 20%;
   }
