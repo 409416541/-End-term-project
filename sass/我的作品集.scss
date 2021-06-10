@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+@import 'config';
+@import 'section';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  background-color: #e6ecdd;
+}
+
+li {
+  list-style:none;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+//Section
+section.articles{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+  gap: 3rem;
+  min-width: 30rem;
+
+  @include setDisplayWidth(90%, 0); 
+
+
+  article{
+    background-color: rgb(238, 209, 209);
+    @include customShadow(0.5rem);
+
+    img{
+      width: 100%;
+    }
+
+    .info {
+      p {
+          margin: 1rem 0;
+      }
+
+      a {
+        font-size: 1.5rem;
+        padding: 2px 2px 0 2px;
+        border-radius: 2px;
+        background-color: bisque;
+      }
+    
+      a:hover {
+        border-radius: 5px;
+        border-bottom: 2px solid #262626;
+        background-color: rgba(235, 134, 205, 0.904);
+        border: 0.2px solid rgba(0, 0, 0, 0.6);
+        box-shadow: -0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+
+    .logo {
+      justify-self: start;
+    }
+  }
+}

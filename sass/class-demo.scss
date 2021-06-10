@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+@import 'config';
+@import 'section';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  background-color: #e6ecdd;
+  font-size: 1.3rem;
+}
+
+li {
+  list-style:none;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+
+    .logo {
+      justify-self: start;
+    }
+  }
+}
