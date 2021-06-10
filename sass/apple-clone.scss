@@ -51,20 +51,11 @@ ul {
     margin: auto;
 }
 
-.menu-btn{
-    cursor: pointer;
-    position: absolute;
-    top: 2.5rem;
-    right: 3rem;
-    z-index: 2;
-    display: none;
-}
-
-.main-header{
+.main-nav{
     width: 100%;
     padding: 0;
 
-    ul.main-menu-apple {
+    .main-ul {
         width: 100%;
         display: flex;
         align-items: center;
@@ -98,8 +89,17 @@ ul {
     }
 }
 
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+    z-index: 2;
+    display: none;
+}
+
 /* Show case */
-nav {
+.showcasen {
     text-align: center;
     padding-top: 6rem;
     padding-bottom: 8px;
@@ -538,13 +538,11 @@ footer.links {
       opacity: 0.5;
     }
   
-    .main-header{
-
-        ul.main-menu {
-            margin: 0 0;
+    .main-nav{
+        ul.main-ul {
             display: block;
             position: absolute;
-            top: 2rem;
+            top: 3rem;
             left: 0;
             width: 50%;
             height: 100vh;
@@ -574,9 +572,22 @@ footer.links {
         }
     }
 
-    nav {
-        padding-top: 2rem;
-        height: 4rem;
+    .showcasen {
+        text-align: center;
+        height: 5.5rem;
+        padding-top: 3rem;
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.05);
+    
+        a {
+            padding-bottom: 2px;
+            font-size: 0.6rem;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    
+        a:hover {
+            @include ahoverrgba(0, 0, 0, 0.8);
+        }
     }
 
     .home-cards {
