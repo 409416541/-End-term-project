@@ -241,7 +241,7 @@ ul {
   display: flex;
 }
 
-.main-nav ul.main-menu {
+.main-nav ul.main-ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
