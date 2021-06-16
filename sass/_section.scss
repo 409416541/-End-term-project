@@ -74,3 +74,17 @@ section.articles{
     }
     }
   }
+
+  @media(max-width: 700px) {
+    section.articles {
+      article {
+          font-size: 0.8rem;
+
+          .info {
+            a {
+              font-size: 1rem;
+            }
+          }
+      }
+    }
+  }
