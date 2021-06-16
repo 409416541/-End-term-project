@@ -6,7 +6,7 @@
     "liveServer.settings.donotShowInfoMsg": false,
     "liveSassCompile.settings.formats": [
         {
-            "format": "compressed",
+            "format": "expanded",
             "extensionName": ".css",
             "savePath": "/dist/css"
         }
